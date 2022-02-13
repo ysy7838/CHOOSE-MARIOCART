@@ -14,7 +14,7 @@
     );
     /* 후에 mysql에 저장하고 활용 */
 
-    if(!isset($members[$user_id]) || $members[$user_id]['password'] != $user_pw ) {
+    if(!isset($members[$id]) || $members[$id]['password'] != $pw ) {
         header("Content-Type: text/html; charset=UTF-8");
         echo "<script>alert('아이디 또는 비밀번호 오류');";
         echo "window.location.replace('login.php');</script>";
