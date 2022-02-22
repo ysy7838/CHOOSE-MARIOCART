@@ -1,18 +1,25 @@
 <?php
-  include="character_button.php"
-  $conn = mysqli_connect('localhost', 'root', 'danee2331', 'web');
+  $host = 'localhost';
+  $user = 'root';
+  $pw = '111111';
+  $dbName = 'web';
+
+  $mysqli = new mysqli($host, $user, $pw, $dbName);
   $sql = "
     INSERT INTO choose
-    (speed, acceleration, handling, friction, weight)
-    VALUES (
-      $speed = '{$_POST['speed']}',
-      $acceleration = '{$_POST['acceleration']}',
-      $handling = '{$_POST['handling']}',
-      $friction = '{$_POST['friction']}',
-      $weight = '{$_POST['weight']}',
-      )";
+      (speed, acceleration, handling, friction, weight)
+    VALUES(
+      '{$_POST['speed']}';
+      '{$_POST['acceleration']}';
+      '{$_POST['handling']}';
+      '{$_POST['friction']}';
+      '{$_POST['weight']}';
+    )";
+    header("Location: chosen_character.php")
+    if($db) {
+      echo '[연결실패] : '.mysql_error().'';
+    } else {
+      echo '[접수]';
+    }
 
-      mysqli_query("INSERT INTO choose (speed, acceleration, handling, friction, weight)
-      ('". $speed ."', '". $acceleration ."', '". $handling ."', '". $friction ."', '". $weight ."')");
-      header("Location: /character_button.php");
-    ?>
+?>
