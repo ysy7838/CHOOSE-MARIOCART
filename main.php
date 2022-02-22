@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <title>메인 페이지</title>
     <style>
 
         @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
@@ -27,6 +28,7 @@
           bottom: 200px;                       /*밑에서의 높이*/
           right: 650px;                        /*오른쪽에서의 위치*/
           font-family: 'Carter One', cursive;
+          text-decoration: none;
         }
         a:hover{
           background-color:yellow;             /*마우스를 올렸을 때 버튼의 배경 색상*/
@@ -35,6 +37,7 @@
     </style>
   </head>
   <body>
+
     <?php
     if(!isset($_SESSION['id'])){
       echo "<a href=\"login.php\">Let's Go!</a>";

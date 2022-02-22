@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <title>캐릭터 설명</title>
     <style>
 
     @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');  /*웹폰트 링크 불러오기*/
@@ -15,7 +16,7 @@
     #title{                                   /*페이지의 제목에 해당하는 id식별자*/
       font-size: 50px;
       padding: 80px;                          /*제목과 본문 사이 공간 띄우기*/
-      margin: 0px;                           /*border과 바깥과의 여백 없애기*/         
+      margin: 0px;                           /*border과 바깥과의 여백 없애기*/
     }
     p{                                       /*캐릭터를 설명하는 텍스트 꾸미기*/
       position: relative;

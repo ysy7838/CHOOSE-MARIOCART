@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset = "utf-8">
-    <title>캐릭터 고르기</title>
+    <title>캐릭터 특성 고르기</title>
     <style>
 
     @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');  /*웹폰트 링크 불러오기*/
